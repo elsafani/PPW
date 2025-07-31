@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | PSB Asma Amanina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+
+  <div class="login-box text-center position-relative">
+    <a href="index.html" class="btn btn-light position-absolute top-0 start-0 m-3">
+      <i class="bi bi-arrow-left"></i>
+    </a>
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <h4>Login</h4>
+    <p class="text-muted">Silahkan login untuk melakukan pengisian data</p>
+
+    <form onsubmit="return handleLogin(event)">
+      <div class="mb-3 text-start">
+        <label for="username" class="form-label">Username</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-person"></i></span>
+          <input type="text" class="form-control" id="nik" placeholder="Masukkan Username" required>
+        </div>
+      </div>
+ 
+      <div class="mb-4 text-start">
+        <label for="password" class="form-label">Password</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input type="password" class="form-control" id="password" placeholder="Masukkan Password" required>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-gradient">Login</button>
+
+      <p class="mt-4 text-muted">Belum punya akun? 
+        <a href="daftar.html" class="btn btn-secondary-outline btn-sm">Buat Akun</a>
+      </p>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  function handleLogin(event) {
+    event.preventDefault(); // Mencegah reload
+
+    // Ambil nilai input
+    const username = document.getElementById("nik").value;
+    const password = document.getElementById("password").value;
+ 
+    // Validasi sederhana (bisa kamu modifikasi)
+    if (username !== "" && password !== "") {
+      // Redirect ke halaman formulir
+      window.location.href = "formulir.html";
+    } else {
+      alert("Mohon isi username dan password.");
+    }
+
+    return false;
+  }
+</script>
+
+</body>
+</html>

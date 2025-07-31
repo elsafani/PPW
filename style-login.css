@@ -1,0 +1,70 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background-size: cover;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .logo {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .form-label {
+      font-weight: 500;
+    }
+
+    .form-control {
+      border-radius: 10px;
+    }
+
+    .input-group-text {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(to right, #8e2de2, #ff6a00);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+    }
+
+    .btn-secondary-outline {
+      border-radius: 25px;
+      background-color: #6f42c1;
+      color: white;
+      font-weight: 500;
+      padding: 8px 20px;
+      border: none;
+    }
+
+    .btn-secondary-outline:hover {
+      opacity: 0.9;
+    }
+
+    #thankYouMessage {
+      display: none;
+      text-align: center;
+      font-size: 20px;
+      color: green;
+      font-weight: 600;
+      margin-top: 20px;
+    }
